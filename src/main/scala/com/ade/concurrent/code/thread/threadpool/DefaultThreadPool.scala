@@ -9,7 +9,7 @@ import java.util.concurrent.atomic.AtomicLong
   * @time: 2019/9/12 10:25
   * @description:  设计一个线程池接口
   */
-class DefaultThreadPool[Job <: Runnable](implicit job:Null <:< Job) extends ThreadPool[Job] {
+class DefaultThreadPool[Job <: Runnable] extends ThreadPool[Job] {
 
     // 线程池最大限制数
     private val MAX_WORKER_NUMBERS: Int = 10
@@ -44,9 +44,7 @@ class DefaultThreadPool[Job <: Runnable](implicit job:Null <:< Job) extends Thre
     }
 
     override def shutdown: Unit = {
-        for (worker: Worker <- workers) {
-            worker.shutdown
-        }
+        workers.forEach(worker => worker.shutdown)
     }
 
     override def addWorkers(num: Int): Unit = {
@@ -61,8 +59,8 @@ class DefaultThreadPool[Job <: Runnable](implicit job:Null <:< Job) extends Thre
         }
     }
 
-    override def removeWorkers(num: Int): Unit = {
-        jobs.synchronized() {
+    @throws[Exception] override def removeWorkers(num: Int): Unit = {
+        jobs.synchronized {
             if (num >= this.workerNum) {
                 throw new IllegalArgumentException("beyond workNum")
             }
@@ -98,8 +96,8 @@ class DefaultThreadPool[Job <: Runnable](implicit job:Null <:< Job) extends Thre
         @volatile private var running: Boolean = true
         override def run(): Unit = {
             while (running) {
-                var job: Job = null
-                jobs.synchronized() {
+                var job: Job =
+                jobs.synchronized {
                     // 如果工作者是空，那么就等待wait
                     while (jobs.isEmpty) {
                         try {
@@ -113,7 +111,7 @@ class DefaultThreadPool[Job <: Runnable](implicit job:Null <:< Job) extends Thre
                         }
                     }
                     // 取出一个Job
-                    job = jobs.removeFirst()
+                    jobs.removeFirst()
                 }
 
                 if (null != job) {
