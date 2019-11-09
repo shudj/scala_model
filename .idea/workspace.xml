@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e591132-069d-49a1-b18c-c33cdc349ab8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/model/mould/ConcreteClassA.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/model/mould/ConcreteClassB.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/model/mould/Mould.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/model/mould/TestMould.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/model/lod/TestLOD.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -160,7 +157,8 @@
       <workItem from="1572761543683" duration="3167000" />
       <workItem from="1572869607540" duration="945000" />
       <workItem from="1573040279103" duration="2481000" />
-      <workItem from="1573130917806" duration="690000" />
+      <workItem from="1573130917806" duration="1444000" />
+      <workItem from="1573297644611" duration="718000" />
     </task>
     <task id="LOCAL-00001" summary="修改默认的线程池">
       <created>1568550163260</created>
@@ -197,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573042986187</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="模板模式">
+      <created>1573131645845</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1573131645845</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +227,7 @@
     <MESSAGE value="代理模式" />
     <MESSAGE value="工厂模式" />
     <MESSAGE value="原型模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="原型模式" />
+    <MESSAGE value="模板模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="模板模式" />
   </component>
 </project>
