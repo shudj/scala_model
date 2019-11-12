@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e591132-069d-49a1-b18c-c33cdc349ab8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/model/observer/ConcreteObserver.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/model/observer/ConcreteSubject.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/model/observer/Observer.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/model/observer/Subject.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/model/observer/TestObserver.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/model/state/ForenoonState.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/model/state/State.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/model/state/TestState.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/model/state/Work.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,26 +64,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestObserver">
+  <component name="RunManager" selected="Application.TestState">
     <configuration name="FacadeClient" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.ade.model.facade.FacadeClient" />
       <module name="Model_24" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ade.model.facade.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Prototype" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.ade.model.prototype.Prototype" />
-      <module name="Model_24" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ade.model.prototype.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,13 +117,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestState" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.ade.model.state.TestState" />
+      <module name="Model_24" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ade.model.state.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestState" />
         <item itemvalue="Application.TestObserver" />
         <item itemvalue="Application.TestBuild" />
         <item itemvalue="Application.FacadeClient" />
         <item itemvalue="Application.TestMould" />
-        <item itemvalue="Application.Prototype" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +163,8 @@
       <workItem from="1573130917806" duration="1444000" />
       <workItem from="1573297644611" duration="3314000" />
       <workItem from="1573368943798" duration="1469000" />
-      <workItem from="1573476437177" duration="2773000" />
+      <workItem from="1573476437177" duration="2872000" />
+      <workItem from="1573558967839" duration="1241000" />
     </task>
     <task id="LOCAL-00001" summary="修改默认的线程池">
       <created>1568550163260</created>
@@ -229,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573370420046</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="观察者模式">
+      <created>1573479871534</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1573479871534</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,6 +265,7 @@
     <MESSAGE value="迪米特法则" />
     <MESSAGE value="外观模式" />
     <MESSAGE value="建造者模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="建造者模式" />
+    <MESSAGE value="观察者模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="观察者模式" />
   </component>
 </project>
