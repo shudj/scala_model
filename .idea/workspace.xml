@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e591132-069d-49a1-b18c-c33cdc349ab8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/model/state/ForenoonState.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/model/state/State.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/model/state/TestState.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/model/state/Work.scala" afterDir="false" />
+    <list default="true" id="6e591132-069d-49a1-b18c-c33cdc349ab8" name="Default Changelist" comment="备忘录模式">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/model/memento/Caretaker.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/model/memento/Memento.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/model/memento/Originator.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/model/memento/TestMemento.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,7 +64,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestState">
+  <component name="RunManager" selected="Application.TestMemento">
     <configuration name="FacadeClient" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.ade.model.facade.FacadeClient" />
       <module name="Model_24" />
@@ -91,12 +91,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMould" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.ade.model.mould.TestMould" />
+    <configuration name="TestMemento" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.ade.model.memento.TestMemento" />
       <module name="Model_24" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ade.model.mould.*" />
+          <option name="PATTERN" value="com.ade.model.memento.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestMemento" />
         <item itemvalue="Application.TestState" />
         <item itemvalue="Application.TestObserver" />
         <item itemvalue="Application.TestBuild" />
         <item itemvalue="Application.FacadeClient" />
-        <item itemvalue="Application.TestMould" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +164,9 @@
       <workItem from="1573297644611" duration="3314000" />
       <workItem from="1573368943798" duration="1469000" />
       <workItem from="1573476437177" duration="2872000" />
-      <workItem from="1573558967839" duration="1241000" />
+      <workItem from="1573558967839" duration="2749000" />
+      <workItem from="1573648102383" duration="1805000" />
+      <workItem from="1573895011840" duration="2314000" />
     </task>
     <task id="LOCAL-00001" summary="修改默认的线程池">
       <created>1568550163260</created>
@@ -236,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573479871534</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="状态模式">
+      <created>1573560321633</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1573560321633</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,6 +275,8 @@
     <MESSAGE value="外观模式" />
     <MESSAGE value="建造者模式" />
     <MESSAGE value="观察者模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="观察者模式" />
+    <MESSAGE value="状态模式" />
+    <MESSAGE value="备忘录模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="备忘录模式" />
   </component>
 </project>
