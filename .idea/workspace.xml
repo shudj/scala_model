@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e591132-069d-49a1-b18c-c33cdc349ab8" name="Default Changelist" comment="备忘录模式">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/model/memento/Caretaker.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/model/memento/Memento.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/model/memento/Originator.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/model/memento/TestMemento.scala" afterDir="false" />
+    <list default="true" id="6e591132-069d-49a1-b18c-c33cdc349ab8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/concurrent/code/customize/Callable.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/concurrent/code/customize/CustomThreadPool.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/concurrent/code/customize/Future.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/concurrent/code/customize/FutureTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/concurrent/code/customize/Notify.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Package Object" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -46,7 +49,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/videos/Flink 入门到精通/Flink入门及实战/FlinkExample-master/FlinkExample-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../study_project/JCSprout-master" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -166,7 +169,9 @@
       <workItem from="1573476437177" duration="2872000" />
       <workItem from="1573558967839" duration="2749000" />
       <workItem from="1573648102383" duration="1805000" />
-      <workItem from="1573895011840" duration="2314000" />
+      <workItem from="1573895011840" duration="3716000" />
+      <workItem from="1573969076697" duration="1507000" />
+      <workItem from="1573971227864" duration="7038000" />
     </task>
     <task id="LOCAL-00001" summary="修改默认的线程池">
       <created>1568550163260</created>
@@ -245,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573560321633</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="备忘录模式">
+      <created>1573897801899</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1573897801899</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
