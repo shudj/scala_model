@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e591132-069d-49a1-b18c-c33cdc349ab8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/concurrent/code/customize/Callable.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/concurrent/code/customize/CustomThreadPool.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/concurrent/code/customize/Future.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/concurrent/code/customize/FutureTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/concurrent/code/customize/Notify.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/model/composite/Component.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/model/composite/Composite.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/model/composite/Leaf.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/ade/model/composite/TestComposite.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/ade/concurrent/code/customize/CustomThreadPool.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/ade/concurrent/code/customize/CustomThreadPool.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/ade/concurrent/code/customize/Notify.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/ade/concurrent/code/customize/Notify.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,13 +67,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestMemento">
-    <configuration name="FacadeClient" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.ade.model.facade.FacadeClient" />
+  <component name="RunManager" selected="Application.TestComposite">
+    <configuration name="TestBuild" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.ade.model.build.TestBuild" />
       <module name="Model_24" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ade.model.facade.*" />
+          <option name="PATTERN" value="com.ade.model.build.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -81,12 +81,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestBuild" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.ade.model.build.TestBuild" />
+    <configuration name="TestComposite" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.ade.model.composite.TestComposite" />
       <module name="Model_24" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ade.model.build.*" />
+          <option name="PATTERN" value="com.ade.model.composite.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestComposite" />
         <item itemvalue="Application.TestMemento" />
         <item itemvalue="Application.TestState" />
         <item itemvalue="Application.TestObserver" />
         <item itemvalue="Application.TestBuild" />
-        <item itemvalue="Application.FacadeClient" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +171,7 @@
       <workItem from="1573648102383" duration="1805000" />
       <workItem from="1573895011840" duration="3716000" />
       <workItem from="1573969076697" duration="1507000" />
-      <workItem from="1573971227864" duration="7038000" />
+      <workItem from="1573971227864" duration="10774000" />
     </task>
     <task id="LOCAL-00001" summary="修改默认的线程池">
       <created>1568550163260</created>
@@ -257,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573897801899</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="自定义一个线程">
+      <created>1573988041664</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1573988041664</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,6 +296,7 @@
     <MESSAGE value="观察者模式" />
     <MESSAGE value="状态模式" />
     <MESSAGE value="备忘录模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="备忘录模式" />
+    <MESSAGE value="自定义一个线程" />
+    <option name="LAST_COMMIT_MESSAGE" value="自定义一个线程" />
   </component>
 </project>

@@ -5,5 +5,5 @@ trait Notify {
     /**
      * 回调
      */
-    def notifyListen
+    def notifyListen: Unit
 }

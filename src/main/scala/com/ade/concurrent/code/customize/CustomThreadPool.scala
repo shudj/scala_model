@@ -3,35 +3,27 @@ package com.ade.concurrent.code.customize
 import java.util
 import java.util._
 import java.util.concurrent.atomic.{AtomicBoolean, AtomicInteger}
-import java.util.concurrent.{BlockingQueue, ConcurrentHashMap, TimeUnit}
 import java.util.concurrent.locks.ReentrantLock
+import java.util.concurrent.{BlockingQueue, ConcurrentHashMap, TimeUnit}
 
-import org.apache.log4j.spi.LoggerFactory
-
-class CustomThreadPool {
+/**
+ *
+ * @param miniSize          最小现场池，也叫核心线程数
+ * @param maxSize           最大线程数
+ * @param keepAliveTime     线程需要被回收的时间
+ * @param unit
+ * @param workQueue         存放线程的阻塞队列
+ * @param notify
+ */
+class CustomThreadPoo (miniSize: Int, maxSize: Int, keepAliveTime: Long, unit: TimeUnit,
+                       workQueue: BlockingQueue[Runnable], notify: Notify) {
 
     private val lock = new ReentrantLock()
-    /**
-     * 最小现场池，也叫核心线程数
-     */
-    @volatile private var miniSize: Int = _
-    /**
-     * 最大线程数
-     */
-    @volatile private var maxSize: Int = _
-    /**
-     * 线程需要被回收的时间
-     */
-    private var keepAliveTime: Long = _
-    private var unit: TimeUnit = _
-    /**
-     * 存放线程的阻塞队列
-     */
-    private var workQueue: BlockingQueue[Runnable] = _
+
     /**
      * 存放线程池
      */
-    @volatile private var workers: Set[Worker] = _
+    private val workers: Set[Worker] = new ConcurrentHashSet()
     /**
      * 是否关闭线程池标志
      */
@@ -44,21 +36,6 @@ class CustomThreadPool {
      * 线程池任务全部执行完毕后的通知组件
      */
     private val shutDownNotify = new Object
-
-    private var notify: Notify = _
-
-    def this(miniSize: Int, maxSize: Int, keepAliveTime: Long, unit: TimeUnit,
-             workQueue: BlockingQueue[Runnable], notify: Notify) {
-        this
-        this.miniSize = miniSize
-        this.maxSize = maxSize
-        this.keepAliveTime = keepAliveTime
-        this.unit = unit
-        this.workQueue = workQueue
-        this.notify = notify
-
-        workers = new ConcurrentHashSet()
-    }
 
     /**
      * 有返回值
@@ -152,7 +129,8 @@ class CustomThreadPool {
             if (isNewTask) task = this.task
             var compile: Boolean = true
             try {
-                while (task != null || (task = getTask) != null) {
+
+                while ((task != null || (task = getTask) != null)) {
                     try {
                         // 执行任务
                         task.run()
