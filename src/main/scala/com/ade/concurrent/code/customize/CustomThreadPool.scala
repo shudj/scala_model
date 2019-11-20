@@ -6,6 +6,8 @@ import java.util.concurrent.atomic.{AtomicBoolean, AtomicInteger}
 import java.util.concurrent.locks.ReentrantLock
 import java.util.concurrent.{BlockingQueue, ConcurrentHashMap, TimeUnit}
 
+import scala.collection.JavaConverters._
+
 /**
  *
  * @param miniSize          最小现场池，也叫核心线程数
@@ -205,7 +207,7 @@ class CustomThreadPoo (miniSize: Int, maxSize: Int, keepAliveTime: Long, unit: T
     /**
      * 关闭所有任务
      */
-    private def closeAllTask: Unit = workers.forEach(_.close)
+    private def closeAllTask: Unit = workers.asScala.foreach(_.close)
 
     /**
      * 任务执行完毕关闭线程

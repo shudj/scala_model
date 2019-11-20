@@ -4,6 +4,7 @@ import java.util
 
 class Composite(name: String) extends Component(name) {
 
+    import scala.collection.JavaConverters._
     private val list = new util.ArrayList[Component]()
     override def add(component: Component): Unit = list.add(component)
 
@@ -11,6 +12,6 @@ class Composite(name: String) extends Component(name) {
 
     override def display(depth: Int): Unit = {
         println("-" * depth + name)
-        list.forEach(_.display(depth + 2))
+        list.asScala.foreach(_.display(depth + 2))
     }
 }

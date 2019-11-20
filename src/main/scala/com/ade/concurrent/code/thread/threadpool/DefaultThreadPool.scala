@@ -44,7 +44,8 @@ class DefaultThreadPool[Job <: Runnable] extends ThreadPool[Job] {
     }
 
     override def shutdown: Unit = {
-        workers.forEach(worker => worker.shutdown)
+        import scala.collection.JavaConverters._
+        workers.asScala.foreach(worker => worker.shutdown)
     }
 
     override def addWorkers(num: Int): Unit = {

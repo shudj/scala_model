@@ -1,6 +1,7 @@
 package com.ade.model.build
 
 import java.util
+import scala.collection.JavaConverters._
 
 class Product {
 
@@ -10,6 +11,6 @@ class Product {
 
     def show = {
         println("产品 创建-------")
-        parts.forEach(println)
+        parts.asScala.foreach(println)
     }
 }
