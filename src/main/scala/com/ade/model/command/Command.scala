@@ -1,9 +1,7 @@
 package com.ade.model.command
 
 /**
-  * @author: shudj
-  * @time: 2019/11/22 17:53
-  * @description:
+  *
   */
 abstract class Command {
 
