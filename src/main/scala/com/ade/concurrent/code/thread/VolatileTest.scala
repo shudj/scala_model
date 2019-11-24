@@ -3,7 +3,7 @@ package com.ade.concurrent.code.thread
 class VolatileTest extends Thread{
 
     // 加上volatile程序会停止
-    // volatile负责从主内存拉取相关属性的值到线程内存中
+    // volatile负责从主内存拉取相关属性的值到线程工作内存中
     @volatile var flag: Boolean = false
     // var flag: Boolean = false
     var i: Int = 0
